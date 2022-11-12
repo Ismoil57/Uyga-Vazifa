@@ -1,0 +1,29 @@
+.nav {
+    @include custom-menu(flex, space-between, center, 100%, 150px, $extra-grey);
+
+    ul {
+        @include custom-menu (flex, space-between, center, 30%, 100%, $extra-grey);
+        list-style-type: none;
+
+        li {
+
+            .nav-item-link-active {
+                color:$cyan;
+            }
+            a {
+                text-decoration: none;
+                color: $black;
+    
+                &:hover {
+                    opacity: 0.6;
+                }
+    
+                &:active {
+                    opacity: 1;
+                    color:$cyan;
+                }
+    
+            }
+        }
+    }
+}

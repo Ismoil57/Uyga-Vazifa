@@ -1,0 +1,89 @@
+.portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+
+    &:nth-child(4) {
+        margin-bottom: 150px;   
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+
+    &:nth-child(even) .portfolio-info {
+        margin-left: 0;
+        margin-right: 125px;
+    }
+
+
+    .portfolio-info {
+        margin-left: 125px;
+        height: 500px;
+
+
+        .portfolio-line {
+            display: inline-block;
+            width: 350px;
+            height: 1px;
+            background-color: $black;
+            opacity: 0.15;
+            margin-bottom: 161px;
+        }
+
+        .portfolio-title {
+            font-family: 'Ibarra Real Nova';
+            font-weight: 700;
+            font-size: 40px;
+            letter-spacing: -0.357143px;
+            color: $black;
+
+        }
+
+        .portfolio-text {
+            font-size: 16px;
+            line-height: 30px;
+            font-size: 16px;
+            letter-spacing: normal;
+            color: $black;
+            opacity: 0.8;
+            width: 350px;
+            margin-top: 28px;
+            margin-bottom: 41px;
+        }
+
+        .portfolio-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border: 1px solid #33323D;
+            color: $black;
+            width: 175px;
+            height: 48px;
+            transition: background 0.1s ease;
+
+            &:hover { 
+                background: $black;
+                color: white;
+            }
+
+            &:active {
+                background: none;
+                border: 1px solid rgba(51, 50, 61, 0.2);
+                color: $black;
+            }
+
+        }
+
+        .portfolio-bottom-line {
+            display: inline-block;
+            width: 350px;
+            height: 1px;
+            background-color: $black;
+            opacity: 0.15;
+            margin-top: 53px;
+        }
+    }
+}

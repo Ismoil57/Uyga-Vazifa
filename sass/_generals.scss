@@ -1,0 +1,15 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    background-color: $extra-grey;
+    margin-top: -15px;
+}

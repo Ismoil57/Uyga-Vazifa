@@ -1,0 +1,87 @@
+.intro {
+    margin-bottom: 150px;
+
+    .intro-wrapper {
+        background: url(../../img/intro.png) no-repeat;
+        width: 1110px;
+        height: 600px;
+        padding-top: 243px;
+    }
+
+
+    .intro-box {
+        width: 445px;
+        height: 357px;
+        background-color: #fff;
+        padding-top: 56px;
+
+        .intro-title {
+            width: 378px;
+            font-family: 'Ibarra Real Nova';
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: -0.446429px;
+            margin-bottom: 19.5px;
+
+        }
+
+        .button-link:hover .button-left {
+            background-color: #56A292;
+        }
+
+        .button-link:active .button-left {
+            background-color: #D2D8DB;
+        }
+
+        .button-link:hover .button-icon {
+            stroke: #fff;
+        }
+
+        .button-link:active .button-icon {
+            stroke: #5fb4a285;
+        }
+
+        .button-link:hover .button-right {
+            background-color: $cyan;
+        }
+
+        .button-link:active .button-right {
+            background-color: #000000;
+            opacity: 0.1;
+        }
+
+
+        .button-link {
+            display: flex;
+            width: 200px;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+
+
+            .button-left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                background-color: $black;
+                transition: background-color 0.1s ease;
+
+
+            }
+
+            .button-right {
+                display: inline-block;
+                text-align: center;
+                padding: 17px 0;
+                width: 152px;
+                height: 48px;
+                background-color: $dark-blue;
+                transition: all 0.1s ease;
+            }
+        }
+
+    }
+}

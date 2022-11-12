@@ -1,0 +1,824 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../font/PublicSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url(../font/IbarraRealNova-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Public Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  background-color: #FAFAFA;
+  margin-top: -15px;
+}
+
+.hide {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  clip-path: 0 0, 0 0, 0 0;
+  visibility: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 165px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background-color: #FAFAFA;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: #FAFAFA;
+  list-style-type: none;
+}
+.nav ul li .nav-item-link-active {
+  color: #5FB4A2;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #33323D;
+}
+.nav ul li a:hover {
+  opacity: 0.6;
+}
+.nav ul li a:active {
+  opacity: 1;
+  color: #5FB4A2;
+}
+
+.socials-line {
+  display: inline-block;
+  width: 1110px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+  margin-bottom: 48px;
+}
+
+.socials-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.socials-wrapper .socials-title {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.socials-wrapper .socials-info {
+  width: 635px;
+}
+.socials-wrapper .socials-info .socials-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #33323D;
+  letter-spacing: 0;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+.socials-wrapper .socials-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 104px;
+}
+.socials-wrapper .socials-icon-wrapper .socials-icon-box .socials-icon-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.socials-wrapper .socials-icon-wrapper .socials-icon-box .socials-icon-link:hover .socials-icon {
+  opacity: 0.8;
+}
+.socials-wrapper .socials-icon-wrapper .socials-icon-box .socials-icon-link:active .socials-icon {
+  fill: #5FB4A2;
+}
+.socials-wrapper .socials-icon-wrapper .socials-icon-box .socials-icon-link .socials-icon {
+  fill: #33323D;
+  transition: fill 0.1s ease;
+}
+
+.socials-footer-line {
+  display: inline-block;
+  width: 1110px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+}
+
+.intro {
+  margin-bottom: 150px;
+}
+.intro .intro-wrapper {
+  background: url(../../img/intro.png) no-repeat;
+  width: 1110px;
+  height: 600px;
+  padding-top: 243px;
+}
+.intro .intro-box {
+  width: 445px;
+  height: 357px;
+  background-color: #fff;
+  padding-top: 56px;
+}
+.intro .intro-box .intro-title {
+  width: 378px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.446429px;
+  margin-bottom: 19.5px;
+}
+.intro .intro-box .button-link:hover .button-left {
+  background-color: #56A292;
+}
+.intro .intro-box .button-link:active .button-left {
+  background-color: #D2D8DB;
+}
+.intro .intro-box .button-link:hover .button-icon {
+  stroke: #fff;
+}
+.intro .intro-box .button-link:active .button-icon {
+  stroke: rgba(95, 180, 162, 0.5215686275);
+}
+.intro .intro-box .button-link:hover .button-right {
+  background-color: #5FB4A2;
+}
+.intro .intro-box .button-link:active .button-right {
+  background-color: #000000;
+  opacity: 0.1;
+}
+.intro .intro-box .button-link {
+  display: flex;
+  width: 200px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.intro .intro-box .button-link .button-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #33323D;
+  transition: background-color 0.1s ease;
+}
+.intro .intro-box .button-link .button-right {
+  display: inline-block;
+  text-align: center;
+  padding: 17px 0;
+  width: 152px;
+  height: 48px;
+  background-color: #203A4C;
+  transition: all 0.1s ease;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+}
+.about-wrapper .about-info {
+  margin-left: 125px;
+  height: 600px;
+}
+.about-wrapper .about-info .about-line {
+  display: inline-block;
+  width: 350px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+  margin-bottom: 50px;
+}
+.about-wrapper .about-info .about-title {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.about-wrapper .about-info .about-text {
+  font-size: 16px;
+  line-height: 30px;
+  font-size: 16px;
+  letter-spacing: normal;
+  color: #33323D;
+  opacity: 0.8;
+  width: 350px;
+  margin-top: 28px;
+  margin-bottom: 41px;
+}
+.about-wrapper .about-info .about-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #33323D;
+  color: #33323D;
+  width: 202px;
+  height: 48px;
+  transition: background 0.1s ease;
+}
+.about-wrapper .about-info .about-link:hover {
+  background: #33323D;
+  color: white;
+}
+.about-wrapper .about-info .about-link:active {
+  background: none;
+  border: 1px solid rgba(51, 50, 61, 0.2);
+  color: #33323D;
+}
+.about-wrapper .about-info .about-bottom-line {
+  display: inline-block;
+  width: 350px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+  margin-top: 53px;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.portfolio-wrapper:nth-child(4) {
+  margin-bottom: 150px;
+}
+.portfolio-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.portfolio-wrapper:nth-child(even) .portfolio-info {
+  margin-left: 0;
+  margin-right: 125px;
+}
+.portfolio-wrapper .portfolio-info {
+  margin-left: 125px;
+  height: 500px;
+}
+.portfolio-wrapper .portfolio-info .portfolio-line {
+  display: inline-block;
+  width: 350px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+  margin-bottom: 161px;
+}
+.portfolio-wrapper .portfolio-info .portfolio-title {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.portfolio-wrapper .portfolio-info .portfolio-text {
+  font-size: 16px;
+  line-height: 30px;
+  font-size: 16px;
+  letter-spacing: normal;
+  color: #33323D;
+  opacity: 0.8;
+  width: 350px;
+  margin-top: 28px;
+  margin-bottom: 41px;
+}
+.portfolio-wrapper .portfolio-info .portfolio-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #33323D;
+  color: #33323D;
+  width: 175px;
+  height: 48px;
+  transition: background 0.1s ease;
+}
+.portfolio-wrapper .portfolio-info .portfolio-link:hover {
+  background: #33323D;
+  color: white;
+}
+.portfolio-wrapper .portfolio-info .portfolio-link:active {
+  background: none;
+  border: 1px solid rgba(51, 50, 61, 0.2);
+  color: #33323D;
+}
+.portfolio-wrapper .portfolio-info .portfolio-bottom-line {
+  display: inline-block;
+  width: 350px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+  margin-top: 53px;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.contact-wrapper h3 {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  width: 330px;
+  color: #33323D;
+}
+.contact-wrapper span {
+  display: inline-block;
+  width: 534px;
+  height: 1px;
+  background-color: #33323D;
+  opacity: 0.15;
+}
+.contact-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #33323D;
+  color: #33323D;
+  width: 162px;
+  height: 48px;
+  margin-top: -15px;
+  transition: background 0.1s ease;
+}
+.contact-wrapper a:hover {
+  background: #33323D;
+  color: white;
+}
+.contact-wrapper a:active {
+  background: none;
+  border: 1px solid rgba(51, 50, 61, 0.2);
+  color: #33323D;
+}
+
+.inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.inputs-wrapper h2 {
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+}
+.inputs-wrapper form {
+  height: 426px;
+  width: 635px;
+}
+.inputs-wrapper form label {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: normal;
+  color: #33323D;
+  opacity: 0.8;
+}
+.inputs-wrapper form input {
+  width: 100%;
+  height: 48px;
+  background: rgba(51, 50, 61, 0.1);
+  margin-top: 8px;
+  margin-bottom: 33px;
+  border-radius: none;
+  border: 0;
+}
+.inputs-wrapper form input input[type=text] {
+  border: 2px solid #5FB4A2;
+  border-radius: 4px;
+}
+.inputs-wrapper form input::placeholder {
+  padding-left: 16px;
+  color: #33323D;
+  opacity: 0.4;
+}
+.inputs-wrapper form textarea {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  background: rgba(51, 50, 61, 0.1);
+  resize: none;
+  width: 100%;
+  height: 96px;
+  border: 0;
+}
+.inputs-wrapper form textarea:focus {
+  outline: 3px solid #5FB4A2;
+  opacity: 1;
+  border: 0;
+}
+.inputs-wrapper form textarea::placeholder {
+  color: #33323D;
+}
+.inputs-wrapper form .inputs-button {
+  padding: 17px 24px;
+  background: #203A4C;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.inputs-wrapper form .inputs-button:hover {
+  background: #5FB4A2;
+}
+.inputs-wrapper form .inputs-button:active {
+  background: #EAEAEB;
+}
+
+footer {
+  background-color: #33323D;
+  margin-top: 150px;
+}
+footer .footer-wrapper .footer-logo-link {
+  margin-right: 49px;
+}
+footer .footer-wrapper .footer-logo-link .footer-logo {
+  fill: white;
+}
+footer .footer-wrapper .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #33323D;
+}
+footer .footer-wrapper .footer-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 309px;
+  height: 100%;
+  background-color: #33323D;
+  list-style-type: none;
+  margin-right: 591px;
+}
+footer .footer-wrapper .footer-nav ul li .nav-item-link-active {
+  color: #5FB4A2;
+}
+footer .footer-wrapper .footer-nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.1s ease;
+}
+footer .footer-wrapper .footer-nav ul li a:hover {
+  opacity: 0.6;
+}
+footer .footer-wrapper .footer-nav ul li a:active {
+  opacity: 1;
+  color: #5FB4A2;
+}
+footer .footer-wrapper .footer-nav .footer-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 104px;
+}
+footer .footer-wrapper .footer-nav .footer-icon-wrapper .footer-icon-box .footer-icon-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+footer .footer-wrapper .footer-nav .footer-icon-wrapper .footer-icon-box .footer-icon-link:hover .footer-icon {
+  fill: #5FB4A2;
+}
+footer .footer-wrapper .footer-nav .footer-icon-wrapper .footer-icon-box .footer-icon-link .footer-icon {
+  transition: fill 0.1s ease;
+}/*# sourceMappingURL=main.css.map */

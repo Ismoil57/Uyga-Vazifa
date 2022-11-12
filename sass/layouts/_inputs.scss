@@ -1,0 +1,87 @@
+.inputs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+
+    h2 {
+        font-family: 'Ibarra Real Nova';
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: -0.357143px;
+        color: $black;
+
+    }
+
+    form {
+        height: 426px;
+        width: 635px;
+
+        label {
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: normal;
+            color: $black;
+            opacity: 0.8;
+        }
+
+        input {
+            width: 100%;
+            height: 48px;
+            background: rgba(51, 50, 61, 0.1);
+            margin-top: 8px;
+            margin-bottom: 33px;
+            border-radius: none;
+            border:0;
+
+            input[type=text] {
+                border: 2px solid $cyan;
+                border-radius: 4px;
+              }
+
+            &::placeholder {
+                padding-left: 16px;;
+                color: $black;
+                opacity: 0.4;
+            }
+
+        }
+        
+        textarea {
+            margin-top: 8px;
+            margin-bottom: 24px;
+            background: rgba(51, 50, 61, 0.1);
+            resize: none;
+            width: 100%;
+            height: 96px;
+            border: 0;
+
+            &:focus {
+                outline: 3px solid $cyan;
+                opacity: 1;
+                border: 0;
+    
+            }
+
+            &::placeholder {
+                color: $black;
+            } 
+        }
+
+        .inputs-button {
+            padding: 17px 24px;
+            background: $dark-blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+
+            &:hover {
+                background: $cyan;
+            }
+
+            &:active {
+                background: $grey;
+            }
+        }
+    }
+}

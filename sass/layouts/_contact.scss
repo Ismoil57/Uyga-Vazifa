@@ -1,0 +1,50 @@
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+
+    h3 {
+        font-family: 'Ibarra Real Nova';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        width: 330px;
+        color: $black;
+
+    }
+
+    span {
+        display: inline-block;
+        width: 534px;
+        height: 1px;
+        background-color: $black;
+        opacity: 0.15;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 1px solid #33323D;
+        color: $black;
+        width: 162px;
+        height: 48px;
+        margin-top: -15px;
+        transition: background 0.1s ease;
+
+        &:hover {
+            background: $black;
+            color: white;
+        }
+
+        &:active {
+            background: none;
+            border: 1px solid rgba(51, 50, 61, 0.2);
+            color: $black;
+        }
+
+    }
+}
